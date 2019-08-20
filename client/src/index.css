@@ -2,11 +2,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #f2f2f2;
+  background-color: #706767;
+  font-family: source sans pro;
 }
 
 .movie-card {
-  background-color: #fff;
+  width:90%;
+  height: 500px;
+  background-color: rgb(211, 182, 182);
+  /* transition: .4s; */
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
@@ -14,11 +18,41 @@ body {
   cursor: pointer;
   position: relative;
   margin: 1rem auto;
+  text-decoration: none;
+  
+}
+.movie-card:active{
+  text-decoration: none;
+  background-color: azure;
 }
 
+.movie-card h2{
+  text-align: center;
+  text-decoration: none;
+  font-size:2rem;
+  
+}
+.movie-card h2:visited{
+  text-decoration: none;
+}
+.movie-card h2:active{
+  text-decoration: none;
+}
+.movie-card h2:focus{
+  text-decoration: none;
+}
+
+
+
+.movie-card:hover{
+  transition: .6s;
+  background-color: rgb(201, 115, 115);
+  cursor: pointer;
+  color: white;
+}
 .movie-director {
   padding: 4px 0;
-  font-size: 0.8rem;
+  font-size: 1.8rem;
 }
 
 .saved-list {
@@ -56,17 +90,31 @@ body {
 .save-button {
   position: absolute;
   top: 25px;
-  right: 25px;
+  right: 50px;
   border: 1px solid grey;
   padding: 5px 10px;
-  background-color: lightseagreen;
+  background-color: rgb(201, 145, 153);
 }
 .save-button:hover {
-  background-color: green;
+  background-color: rgb(49, 168, 49);
   color: white;
 }
 
 .home-button {
   padding: 5px 10px;
-  background-color: lightskyblue;
+  background-color: rgb(199, 118, 122);
+  text-decoration: none;
+  color:white;
+}
+
+.home-button:hover {
+  background-color: rgb(228, 199, 205);
+  color: rgb(87, 47, 56);
+  transition: .6s;
+  transition: .6s;
+}
+.movie-card img{
+  width:20%;
+  float:right;
+  
 }
